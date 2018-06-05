@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+nmcli dev wifi | grep $(nmcli dev show wlp2s0 | grep "CONNECTION" | awk '{print $2}') | awk '{print $7}'
