@@ -1,0 +1,7 @@
+#include "/home/acron/.config/rofi/custom.theme"
+
+rofi.combi-modi:       run,drun
+rofi.modi:             combi
+rofi.font:             GohuFont Nerd Font 10
+rofi.run-command:      fish -c '{cmd}'
+rofi.run-list-command: 'fish -c functions'

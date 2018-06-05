@@ -1,0 +1,24 @@
+[global_config]
+  title_font = GohuFont Nerd Font Mono Medium 9
+  title_transmit_bg_color = "#7619c6"
+  title_use_system_font = False
+[keybindings]
+  go_down = <Shift>Down
+  go_left = <Shift>Left
+  go_right = <Shift>Right
+  go_up = <Shift>Up
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_darkness = 0.65
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    palette = "#2e3436:#7619c6:#4e9a06:#c4a000:#3465a4:#cc0000:#06989a:#d3d7cf:#555753:#7619c6:#8ae234:#fce94f:#729fcf:#bf3f3f:#34e2e2:#eeeeec"
