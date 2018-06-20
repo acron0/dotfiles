@@ -121,6 +121,7 @@ ws-icon-0 = "emacs;"
 ws-icon-1 = "term;"
 ws-icon-2 = "www;"
 ws-icon-3 = "slack;"
+ws-icon-4 = "spotify;"
 
 [module/xbacklight]
 type = internal/xbacklight

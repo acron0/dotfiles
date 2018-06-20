@@ -65,4 +65,4 @@ set -g theme_complete_path yes
 set -g theme_display_time yes
 set -g theme_display_group no
 
-. ~/.config/omf/vars.fish
+. ~/.config/fish/vars.fish

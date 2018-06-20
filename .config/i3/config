@@ -98,14 +98,14 @@ set $tag1 "1: emacs"
 set $tag2 "2: term"
 set $tag3 "3: www"
 set $tag4 "4: slack"
-# set $tag5 "spotify"
+set $tag5 "5: spotify"
 
 # switch to workspace
 bindsym $mod+1 workspace $tag1
 bindsym $mod+2 workspace $tag2
 bindsym $mod+3 workspace $tag3
 bindsym $mod+4 workspace $tag4
-bindsym $mod+5 workspace 5
+bindsym $mod+5 workspace $tag5
 bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
@@ -117,7 +117,7 @@ bindsym $mod+Shift+1 move container to workspace $tag1
 bindsym $mod+Shift+2 move container to workspace $tag2
 bindsym $mod+Shift+3 move container to workspace $tag3
 bindsym $mod+Shift+4 move container to workspace $tag4
-bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+5 move container to workspace $tag5
 bindsym $mod+Shift+6 move container to workspace 6
 bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
@@ -208,10 +208,10 @@ gaps outer 10
 assign [class="[eE]macs"] $tag1
 assign [class="[gG]oog.*"] $tag3
 assign [class="Slack.*"] $tag4
-#assign [class="Spotify"] $tag5
+assign [class="Spotify.*"] $tag5
 
-exec i3-msg 'exec emacs; workspace $tag2; exec i3-sensible-terminal; workspace $tag3; exec google-chrome; workspace $tag4; exec slack;'
+exec i3-msg 'exec emacs; workspace $tag2; exec i3-sensible-terminal; workspace $tag3; exec google-chrome; workspace $tag4; exec slack; workspace $tag5; exec spotify'
 exec --no-startup-id nm-applet
 exec feh --bg-fill ~/Pictures/backgrounds/1.jpg
-exec --no-startup-id compton
+exec --no-startup-id compton -c
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
