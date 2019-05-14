@@ -1,5 +1,5 @@
 [global_config]
-  title_font = GohuFont Nerd Font Mono Medium 9
+  title_font = GohuFont Nerd Font Mono Medium 8
   title_transmit_bg_color = "#7619c6"
   title_use_system_font = False
 [keybindings]

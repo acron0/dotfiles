@@ -95,8 +95,8 @@ bindsym $mod+p move workspace to output right
 
 # names
 set $tag1 "1: emacs"
-set $tag2 "2: term"
-set $tag3 "3: www"
+set $tag2 "2: www"
+set $tag3 "3: term"
 set $tag4 "4: slack"
 set $tag5 "5: spotify"
 
@@ -206,12 +206,13 @@ gaps inner 10
 gaps outer 10
 
 assign [class="[eE]macs"] $tag1
-assign [class="[gG]oog.*"] $tag3
+assign [class="[gG]oog.*"] $tag2
 assign [class="Slack.*"] $tag4
 assign [class="Spotify.*"] $tag5
 
-exec i3-msg 'exec emacs; workspace $tag2; exec i3-sensible-terminal; workspace $tag3; exec google-chrome; workspace $tag4; exec slack; workspace $tag5; exec spotify'
+exec i3-msg 'exec emacs; workspace $tag2; exec google-chrome; workspace $tag3; exec i3-sensible-terminal; workspace $tag4; exec slack; workspace $tag5; exec spotify'
 exec --no-startup-id nm-applet
 exec feh --bg-fill ~/Pictures/backgrounds/1.jpg
 exec --no-startup-id compton -c
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id redshift -t 6000:4500
