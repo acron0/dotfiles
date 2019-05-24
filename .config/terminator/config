@@ -1,4 +1,5 @@
 [global_config]
+  inactive_color_offset = 0.708333333333
   title_font = GohuFont Nerd Font Mono Medium 8
   title_transmit_bg_color = "#7619c6"
   title_use_system_font = False
@@ -11,6 +12,7 @@
   [[default]]
     [[[child1]]]
       parent = window0
+      profile = default
       type = Terminal
     [[[window0]]]
       parent = ""
@@ -18,7 +20,9 @@
 [plugins]
 [profiles]
   [[default]]
-    background_darkness = 0.65
+    background_darkness = 0.15
     background_type = transparent
     cursor_color = "#aaaaaa"
     palette = "#2e3436:#7619c6:#4e9a06:#c4a000:#3465a4:#cc0000:#06989a:#d3d7cf:#555753:#7619c6:#8ae234:#fce94f:#729fcf:#bf3f3f:#34e2e2:#eeeeec"
+    scrollback_infinite = True
+    show_titlebar = False
