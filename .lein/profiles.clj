@@ -1,0 +1,12 @@
+{:user {:plugins [[lein-try "0.4.3"]
+                  [lein-play "2.0.0"]
+                  [lein-ancient "0.6.15"]
+                  [cider/cider-nrepl "0.21.0"]
+                  [jonase/eastwood "0.2.5"]
+                  [lein-kibit "0.1.6-beta2"]
+                  [lein-cljfmt "0.5.7"]
+                  [metosin/bat-test "0.4.2"]]
+        :dependencies [[hashp "0.1.0"]]
+        :injections [(require 'hashp.core)]
+        :hooks [leiningen.hooks.play]
+        :signing {:gpg-key "FFBB9F2C6A29D46BE0A67B4B364C24FCB2378DF3"}}}
