@@ -56,7 +56,7 @@ font-2 = Icons:size=10
 
 modules-left = i3 
 modules-center = bgmmol ;pomodoro
-modules-right = filesystem xbacklight memory cpu wlan eth battery temperature weather date ping volume powermenu
+modules-right = filesystem xbacklight memory cpu wlan eth ping battery temperature weather date volume powermenu
 
 tray-position = right
 tray-padding = 2
@@ -73,7 +73,7 @@ type = custom/script
 exec = $HOME/.config/polybar/ping.sh
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = ${colors.primary-alt-7}
+format-underline = ${colors.primary-alt-5}
 
 
 [module/filesystem]
@@ -130,6 +130,7 @@ ws-icon-1 = "term;"
 ws-icon-2 = "www;"
 ws-icon-3 = "slack;"
 ws-icon-4 = "spotify;"
+ws-icon-5 = "calendar;"
 
 [module/xbacklight]
 type = internal/xbacklight
@@ -221,7 +222,7 @@ time-alt = %l:%M:%S %p
 
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = ${colors.primary-alt-6}
+format-underline = ${colors.primary-alt-7}
 
 label = %date% %time%
 
@@ -342,7 +343,7 @@ type = custom/script
 exec = $HOME/.config/polybar/weather.sh
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = ${colors.primary-alt-5}
+format-underline = ${colors.primary-alt-6}
 
 [module/pomodoro]
 type = custom/script
