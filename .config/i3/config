@@ -35,6 +35,10 @@ bindsym $mod+l exec --no-startup-id i3lock -b --image ~/Pictures/backgrounds/1.p
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec "rofi -show-icons -show combi"
+
+# start watson
+bindsym $mod+t exec "PATH=~/.local/bin:$PATH python3 ~/.config/rofi/scripts/watson"
+
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -80,6 +84,7 @@ bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
+bindsym $mod+Shift+k sticky toggle
 
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
@@ -209,10 +214,12 @@ gaps outer 0
 assign [class="[eE]macs"] $tag1
 assign [class="[cC]hrome.*"] $tag2
 assign [class="Slack.*"] $tag4
-assign [class="Spotify.*"] $tag5
 assign [class="[mM]ine[tT]ime"] $tag6
+# Spotify = special
+for_window [class="Spotify"] move to workspace $tag5, workspace --no-auto-back-and-forth $tag5
 
 exec i3-msg 'exec emacs; workspace $tag2; exec google-chrome; workspace $tag3; exec i3-sensible-terminal; workspace $tag4; exec slack; workspace $tag5; exec spotify; workspace $tag6; exec minetime'
+# non-ui apps?
 exec --no-startup-id nm-applet
 exec feh --bg-fill ~/Pictures/backgrounds/1.jpg
 exec --no-startup-id compton -c
