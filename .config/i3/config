@@ -218,7 +218,7 @@ assign [class="[mM]ine[tT]ime"] $tag6
 # Spotify = special
 for_window [class="Spotify"] move to workspace $tag5, workspace --no-auto-back-and-forth $tag5
 
-exec i3-msg 'exec emacs; workspace $tag2; exec google-chrome; workspace $tag3; exec i3-sensible-terminal; workspace $tag4; exec slack; workspace $tag5; exec spotify; workspace $tag6; exec minetime'
+exec i3-msg 'exec emacs; workspace $tag2; exec google-chrome; workspace $tag3; exec i3-sensible-terminal -l four; workspace $tag4; exec slack; workspace $tag5; exec spotify; workspace $tag6; exec minetime'
 # non-ui apps?
 exec --no-startup-id nm-applet
 exec feh --bg-fill ~/Pictures/backgrounds/1.jpg

@@ -11,12 +11,67 @@
 [layouts]
   [[default]]
     [[[child1]]]
+      directory = ""
       parent = window0
       profile = default
       type = Terminal
     [[[window0]]]
       parent = ""
       type = Window
+  [[four]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 2259e917-f5c8-442a-89bd-a510f82b666f
+      last_active_window = True
+      maximised = False
+      order = 0
+      parent = ""
+      position = 30:54
+      size = 1235, 1516
+      title = ~ | fish
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 756
+      ratio = 0.500330906684
+      type = VPaned
+    [[[child2]]]
+      order = 0
+      parent = child1
+      position = 616
+      ratio = 0.50081300813
+      type = HPaned
+    [[[child5]]]
+      order = 1
+      parent = child1
+      position = 616
+      ratio = 0.50081300813
+      type = HPaned
+    [[[terminal3]]]
+      order = 0
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = 890844fc-9bb7-4859-a541-3160ee1f114e
+    [[[terminal4]]]
+      order = 1
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = 2259e917-f5c8-442a-89bd-a510f82b666f
+    [[[terminal6]]]
+      order = 0
+      parent = child5
+      profile = default
+      type = Terminal
+      uuid = b6c8f382-5301-4c96-ba43-aaf7d88b6246
+    [[[terminal7]]]
+      order = 1
+      parent = child5
+      profile = default
+      type = Terminal
+      uuid = 45cd0274-be00-4074-9de5-abfa96959e63
 [plugins]
 [profiles]
   [[default]]
