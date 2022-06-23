@@ -104,7 +104,7 @@ set $tag2 "2: www"
 set $tag3 "3: term"
 set $tag4 "4: slack"
 set $tag5 "5: spotify"
-set $tag6 "6: calendar"
+set $tag6 "6: athens"
 
 # switch to workspace
 bindsym $mod+1 workspace $tag1
@@ -214,11 +214,11 @@ gaps outer 0
 assign [class="[eE]macs"] $tag1
 assign [class="[cC]hrome.*"] $tag2
 assign [class="Slack.*"] $tag4
-assign [class="[mM]ine[tT]ime"] $tag6
+assign [class="[aA]thens"] $tag6
 # Spotify = special
 for_window [class="Spotify"] move to workspace $tag5, workspace --no-auto-back-and-forth $tag5
 
-exec i3-msg 'exec emacs; workspace $tag2; exec google-chrome; workspace $tag3; exec i3-sensible-terminal -l four; workspace $tag4; exec slack; workspace $tag5; exec spotify; workspace $tag6; exec minetime'
+exec i3-msg 'exec emacs; workspace $tag2; exec google-chrome; workspace $tag3; exec i3-sensible-terminal -l four; workspace $tag4; exec slack; workspace $tag5; exec spotify; workspace $tag6; exec athens'
 # non-ui apps?
 exec --no-startup-id nm-applet
 exec feh --bg-fill ~/Pictures/backgrounds/1.jpg

@@ -1,4 +1,5 @@
 [global_config]
+  enabled_plugins = ActivityWatch, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
   inactive_color_offset = 0.708333333333
   title_font = GohuFont Nerd Font Mono Medium 8
   title_transmit_bg_color = "#7619c6"
